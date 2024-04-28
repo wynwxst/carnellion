@@ -46,5 +46,6 @@ subclassing USBError.
 """
 
 from .classes import *
+from . import lib
 from . import iosb
 from . import consts

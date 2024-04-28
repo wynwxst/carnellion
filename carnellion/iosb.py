@@ -1,48 +1,15 @@
-from . import classes as usb1
+import carnellion.classes as usb1
 
 
 import pickle
 import sys
-from lib import objects
+from carnellion.lib import objects
 import time
 from ctypes import sizeof
 import copy
 
 
-#### consts
-DFU_DNLOAD = 1
-APPLE_VID = 0x5AC
-DFU_STATUS_OK = 0
-DFU_GET_STATUS = 3
-DFU_CLR_STATUS = 4
-MAX_BLOCK_SZ = 0x50
-DFU_MODE_PID = 0x1227
-PONGO_MODE_PID = 0x4141
-DFU_STATE_MANIFEST = 7
-EP0_MAX_PACKET_SZ = 0x40
-DFU_FILE_SUFFIX_LEN = 16
-DFU_MAX_TRANSFER_SZ = 0x800
-DFU_STATE_MANIFEST_SYNC = 6
-ARM_16K_TT_L2_SZ = 0x2000000 #
-DFU_STATE_MANIFEST_WAIT_RESET = 8
-DONE_MAGIC = 0x646F6E65646F6E65 #ll
-EXEC_MAGIC = 0x6578656365786563 #ll
-MEMC_MAGIC = 0x6D656D636D656D63 #ll
-USB_MAX_STRING_DESCRIPTOR_IDX = 10
-usb_timeout=5000
-usb_abort_timeout_min = 0
-LZSS_F = 18
-LZSS_N = 4096
-DER_INT = 0x2
-DER_SEQ = 0x30
-LZSS_THRESHOLD = 2
-DER_IA5_STR  = 0x16
-DER_OCTET_STR = 0x4
-COMP_HDR_PAD_SZ  =0x16C
-COMP_HDR_MAGIC =0x636F6D70
-DER_FLAG_OPTIONAL = 1 << 0
-COMP_HDR_TYPE_LZSS = 0x6C7A7373
-####
+from carnellion.consts import *
 
 
 
