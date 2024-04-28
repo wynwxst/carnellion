@@ -1,8 +1,8 @@
-import usb1
-from usb1.iosb import usb
-from usb1.consts import * 
+import carnellion
+from carnellion.iosb import usb
+from carnellion.consts import * 
 def lanhua():
-    ctx = usb1.USBContext()
+    ctx = carnellion.USBContext()
     handle = ctx.openByVendorIDAndProductID(0x5AC,0x1227,skip_on_error=True)
     if handle == None:
         print("unfound")
